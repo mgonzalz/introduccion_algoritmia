@@ -1,3 +1,9 @@
 @startuml
-
+class Precio{
+    - precio: int
+    - interes: int
+    - meses: int
+    - capital: int
+    - Importe()
+}
 @enduml

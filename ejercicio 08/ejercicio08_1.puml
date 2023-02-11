@@ -1,4 +1,7 @@
 @startuml
-
-
+class Precio {
+    - precio: int
+    - iva = "1,21"
+    - calculo_con_iva()
+}
 @enduml

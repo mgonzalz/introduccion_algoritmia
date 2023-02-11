@@ -16,7 +16,6 @@ def funcion_decoradora(funcion_parametro):
 
 @funcion_decoradora
 def operaciones(saldo):
-
     print("1. Ingresar dinero en cuenta")
     print("2. Retirar dinero de la cuenta")
     print("3. Salir")

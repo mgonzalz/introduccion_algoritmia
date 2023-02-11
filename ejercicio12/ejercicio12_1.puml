@@ -1,0 +1,8 @@
+@startuml
+class CuentaBancaria {
+    -saldo: 1 int
+    +CuentaBancaria()
+    +AñadirSaldo()
+    +RetirarSaldo()
+    }
+@enduml
