@@ -3,8 +3,8 @@ object Triangulo{
     -int lado
     -int altura
 }
-Triangulo <-- Area
 object Area{
     -int area: lado*altura/2
 }
+Triangulo <-- Area
 @enduml
