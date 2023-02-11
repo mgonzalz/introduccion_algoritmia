@@ -1,4 +1,4 @@
-# introduccion_algoritmia
+# Introduccion a la Algoritmia
 
 Link del repositorio: https://github.com/mgonzalz/introduccion_algoritmica.git
 
@@ -6,7 +6,7 @@ Link del repositorio: https://github.com/mgonzalz/introduccion_algoritmica.git
 Ejercicios a realizar:
 
 
-Ejercicio 8: Porcentajes, IVA e inversiones
+**Ejercicio 8: Porcentajes, IVA e inversiones**
 
 
 1. Escribir un algoritmo que calcula el precio con todos los impuestos incluidos (TII) para un precio sin impuestos y un porcentaje de IVA dado.
@@ -14,21 +14,21 @@ Ejercicio 8: Porcentajes, IVA e inversiones
 2. Escribir un algoritmo que calcula el importe de los intereses generados por un capital invertido a un interés dado durante un tiempo dado, expresado en meses.
 
 
-Ejercicio 9: Media aritmética ponderada
+**Ejercicio 9: Media aritmética ponderada**
 
 1. Escribir un algoritmo que calcula la media aritmética de tres números dados.
 
 2. La misma pregunta para una media ponderada cuando se dan los números y los coeficientes de ponderación.
 
 
-Ejercicio 10: Área del triángulo
+**Ejercicio 10: Área del triángulo**
 
 1. Escribir un algoritmo que calcula el área de un triángulo del que se da la medida de un lado y la de la altura relativa a este lado.
 
 2. ¿Se puede utilizar este algoritmo para un triángulo rectángulo si se dan las medidas de sus dos lados perpendiculares?
 
 
-Ejercicio 11: Salario y horas extra
+**Ejercicio 11: Salario y horas extra**
 
 
 El cálculo de una nómina tiene en cuenta el salario bruto asociado a las horas «normales» que debe hacer el empleado y las horas «extra» trabajadas en el mes. Las horas extra se remuneran según las siguientes normas administrativas:
@@ -46,7 +46,7 @@ Se podrá suponer que el cálculo siempre se usa para una cantidad de horas supe
 Encontrará una solución propuesta para este ejercicio en los elementos complementarios de este libro que están disponibles para descargar desde la página Información.
 
 
-Ejercicio 12: Cuenta de depósito
+**Ejercicio 12: Cuenta de depósito**
 
 Se considera las cuentas de depósitos alojadas en un banco por los clientes. Solo se permite hacer una retirada si el saldo que queda en la cuenta no es negativo.
 
