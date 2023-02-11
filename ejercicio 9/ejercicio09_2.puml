@@ -1,0 +1,7 @@
+@startuml media
+class Media_Ponderada {	
+    - numeros: 1..* int
+    - coeficientes: 1..* int
+    + media_ponderada(): int
+}
+@enduml
