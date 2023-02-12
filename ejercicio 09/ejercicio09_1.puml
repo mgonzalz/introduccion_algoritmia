@@ -1,8 +1,4 @@
 @startuml media
-class Media {	
-    - numero1: 1 int
-    - numero2: 1 int
-    - numero3: 1 int
-    + media_aritmética(): int
-}
+Numeros --> Suma: a + b +c
+Suma --> Media: suma/3
 @enduml

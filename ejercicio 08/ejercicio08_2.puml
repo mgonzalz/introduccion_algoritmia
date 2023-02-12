@@ -1,9 +1,11 @@
 @startuml
-class Precio{
-    - precio: int
-    - interes: int
-    - meses: int
-    - capital: int
-    - Importe()
-}
+participant Intereses [
+    =Intereses
+    ----
+    ""capital: int ""
+    ""interes: int ""
+    ""meses: int ""
+]
+Intereses --> Resultado: capital*interes*meses/100/12
+activate Resultado
 @enduml

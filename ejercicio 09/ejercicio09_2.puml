@@ -1,7 +1,6 @@
 @startuml media
-class Media_Ponderada {	
-    - numeros: 1..* int
-    - coeficientes: 1..* int
-    + media_ponderada(): int
-}
+Numero -> Coeficiente: Multiplicar(a*b)
+Coeficiente -> Coeficiente: Sumar coeficientes
+Coeficiente -> Resultado: sumartorio(a*b)/suma_coeficientes
+
 @enduml

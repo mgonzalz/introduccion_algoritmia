@@ -1,20 +1,13 @@
 @startuml
-class Precio {
-    - precio: int
-    - iva = "1,21"
-    - calculo_con_iva()
-}
-@enduml
-
-@startuml
-participant Participant [
-    =Title
+participant Precio [
+    =Precio
     ----
-    ""SubTitle""
+    ""precio: int""
+    ""iva = "1,21"""
 ]
 
-participant Bob
+Precio -> Resultado:  precio + precio * iva
+activate Resultado
 
-Participant -> Bob
 @enduml
 
