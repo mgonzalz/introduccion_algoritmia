@@ -1,14 +1,21 @@
-'''
-El cálculo de una nómina tiene en cuenta el salario bruto asociado a las horas «normales» que debe hacer el empleado y las horas «extra» trabajadas en el mes. Las horas extra se remuneran según las siguientes normas administrativas:
+#Calcular el sueldo de un empleado que trabaja 35 horas a la semana, si el empleado trabaja más de 44 horas se le paga 1.5 veces el sueldo por hora, si trabaja entre 36 y 43 horas se le paga 1.25 veces el sueldo por hora, si trabaja menos de 35 horas no se le paga nada por las horas extras.
 
-Tarifa por hora aumentada en un 125 % para las horas entre la 36.ª y la 43.ª.
+def funcion_decoradora(funcion_parametro):
+    def funcion_interior(*args):
+        print("Segun el numero de horas trabajadas, el sueldo es: ", funcion_parametro(*args), "€")
+    return funcion_interior
 
-Tarifa por hora aumentada en un 150 % para las horas a partir de la 44.ª.
 
-El aumento se realiza sobre la tarifa por hora normal, calculado a partir del salario mensual bruto para un año de 52 semanas repartidas en 12 meses, sobre la base de 35 horas trabajadas por semana.
-
-Escribir el algoritmo que calcula el importe de las horas extra que hay que pagar, a partir del salario mensual bruto y de la cantidad de horas extra.
-
-Se podrá suponer que el cálculo siempre se usa para una cantidad de horas superior a 8. El problema general supone el estudio previo del capítulo siguiente, que trata de la alternativa.
-'''
+@funcion_decoradora
+def calcularSueldo(horas, sueldo):
+    if horas >= 44:
+        return (sueldo)/35*1.5*(horas-35)
+    elif horas >= 36 and horas<= 43:
+        return (sueldo)/35*1.25*(horas-35)
+    elif horas <=35:
+        print("El empleado cobrará nada por las horas extras")
+print("CALCULADORA DE SUELDO")
+horas = int(input("Ingrese las horas trabajadas: "))
+sueldo = int(input("Ingrese el sueldo por hora: "))
+calcularSueldo(horas, sueldo)
 
