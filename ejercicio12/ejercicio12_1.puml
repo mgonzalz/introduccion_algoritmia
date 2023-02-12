@@ -1,8 +1,19 @@
 @startuml
-class CuentaBancaria {
-    -saldo: 1 int
-    +CuentaBancaria()
-    +AñadirSaldo()
-    +RetirarSaldo()
-    }
+Persona -> Cuenta: Depositar dinero
+Cuenta -> Dinero: Guarda dinero
+Persona -> Cuenta: Sacar dinero
+alt successful case
+
+    Cuenta -> Dinero: No supera el límite de extracción.
+    Dinero -> Persona: Entrega el dinero
+
+else some kind of failure
+
+    Cuenta -> Dinero: Superó el límite de extracción. No saca dinero.
+
+
+end
+activate Cuenta
+activate Dinero
+
 @enduml

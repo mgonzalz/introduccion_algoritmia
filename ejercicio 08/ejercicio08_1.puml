@@ -5,3 +5,16 @@ class Precio {
     - calculo_con_iva()
 }
 @enduml
+
+@startuml
+participant Participant [
+    =Title
+    ----
+    ""SubTitle""
+]
+
+participant Bob
+
+Participant -> Bob
+@enduml
+

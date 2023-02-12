@@ -1,10 +1,4 @@
 @startuml
-object Triangulo{
-    -int lado1
-    -int lado2
-}
-Triangulo <-- Area
-object Area{
-    -int area: lado1*lado2/2
-}
+Lado1 --> Lado2: lado1*lado2
+Lado2 --> Area: (lado1*lado2)/2
 @enduml
