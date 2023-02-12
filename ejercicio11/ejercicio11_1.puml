@@ -1,0 +1,27 @@
+@startuml
+participant HorasExtra [
+    =Horas Extra
+    ----
+    ""HorasExtra: int""
+    ""sueldohora: int""
+]
+alt successful case
+
+    HorasExtra -> Sueldo: Si horasextra >= 44
+    Sueldo -> Resultado: (sueldohora)/35*1.5*(horasextra-35)
+
+else some kind of failure
+
+    HorasExtra -> Sueldo: 43>= horas >= 36
+    Sueldo -> Resultado: (sueldo)/35*1.25*(horas-35)
+else some kind of failure
+
+    HorasExtra -> Sueldo: 35>= horas
+    Sueldo -> Resultado: Cobrará nada por las horas extras
+
+
+end
+activate Sueldo
+activate Resultado
+
+@enduml
